@@ -15,6 +15,7 @@ Also creates these client-specific files inside the vault:
 - `outputs/START-HERE-WIKI-RULE-PROMPT.md`
 - `outputs/START-HERE-NEXT-MESSAGE.md`
 - `outputs/START-HERE-ONBOARDING-GAME-PROMPT.md`
+- `outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`
 
 ## Path B: local repo install
 
@@ -61,6 +62,9 @@ It validates:
 - weekly digest generation
 
 For exact no-guessing sequence, use: `operator-pack/PERFECT-PILOT-RUNBOOK.md`
+
+For one paste to client Zo (install + onboarding in one instruction), use:
+`outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`
 
 ## Hidden operator commands (behind the scenes)
 

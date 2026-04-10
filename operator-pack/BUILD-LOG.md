@@ -56,3 +56,5 @@
   - now prints exact file paths for operator handoff
 - Added no-ambiguity operator sequence: `operator-pack/PERFECT-PILOT-RUNBOOK.md`.
 - Updated validation checklist to require generated START-HERE prompt files in outputs.
+- Added one-shot handoff template `operator-pack/ONE-SHOT-INSTALL-ONBOARD-PROMPT.md` for client Zo to install + onboard in a single prompt.
+- Installer now generates client-specific `outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`.

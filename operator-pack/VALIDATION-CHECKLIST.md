@@ -10,6 +10,7 @@ A client setup is valid only if all checks pass.
 - [ ] `outputs/START-HERE-WIKI-RULE-PROMPT.md` exists
 - [ ] `outputs/START-HERE-NEXT-MESSAGE.md` exists
 - [ ] `outputs/START-HERE-ONBOARDING-GAME-PROMPT.md` exists
+- [ ] `outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md` exists
 
 ## Hidden operator layer
 

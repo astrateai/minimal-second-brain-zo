@@ -22,6 +22,14 @@ Copy the entire file below and paste it to the client's Zo:
 
 `/home/workspace/Wiki/<client-slug>-wiki/outputs/START-HERE-WIKI-RULE-PROMPT.md`
 
+## Alternate mode - One-shot install + onboarding
+
+If you want one paste that tells client Zo to install and immediately run onboarding, use:
+
+`/home/workspace/Wiki/<client-slug>-wiki/outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`
+
+This replaces Steps 2-4.
+
 ## Step 3 - Paste kickoff message into client Zo
 
 Copy the entire file below and paste it to the client's Zo:

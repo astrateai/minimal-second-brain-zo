@@ -27,6 +27,7 @@ Everything else is handled by AI/operator automation.
 - `operator-pack/`
   - copy/paste setup
   - perfect pilot runbook
+  - one-shot install+onboard prompt template
   - onboarding game script
   - weekly digest setup
   - validation checklist
