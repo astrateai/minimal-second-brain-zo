@@ -50,3 +50,9 @@
 - Added canonical policy doc: `operator-pack/WIKI-CAPTURE-POLICY.md`.
 - Updated onboarding, installer output, README, template README, FAQ, and setup docs to teach and enforce the same fixed trigger contract.
 - Re-ran installer smoke test for `wife` vault and verified `NEXT_MESSAGE_TO_CLIENT` now includes trigger rules.
+- Hardened installer for no-guessing onboarding:
+  - now writes client-specific `START-HERE-WIKI-RULE-PROMPT.md`
+  - now writes client-specific `START-HERE-ONBOARDING-GAME-PROMPT.md` (slug replaced automatically)
+  - now prints exact file paths for operator handoff
+- Added no-ambiguity operator sequence: `operator-pack/PERFECT-PILOT-RUNBOOK.md`.
+- Updated validation checklist to require generated START-HERE prompt files in outputs.

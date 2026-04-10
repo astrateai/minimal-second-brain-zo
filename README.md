@@ -26,6 +26,7 @@ Everything else is handled by AI/operator automation.
   - hidden `.ops/` automation layer
 - `operator-pack/`
   - copy/paste setup
+  - perfect pilot runbook
   - onboarding game script
   - weekly digest setup
   - validation checklist
@@ -72,11 +73,7 @@ cd /home/workspace/Wiki/<client-slug>-wiki
 
 ## Pilot flow (wife/brother)
 
-1. Run installer.
-2. Send the printed "NEXT_MESSAGE_TO_CLIENT".
-3. Run onboarding game from `operator-pack/ONBOARDING-GAME-SCRIPT.md`.
-4. Use `operator-pack/CLIENT-FAQ.md` for noob-first explanation.
-5. Confirm success using `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
+Use `operator-pack/PERFECT-PILOT-RUNBOOK.md` for exact copy/paste sequence.
 
 ## Notes
 

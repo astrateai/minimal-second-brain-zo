@@ -10,6 +10,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/astrateai/minimal-second-bra
 
 This installs everything and prints the exact first onboarding message.
 
+Also creates these client-specific files inside the vault:
+
+- `outputs/START-HERE-WIKI-RULE-PROMPT.md`
+- `outputs/START-HERE-NEXT-MESSAGE.md`
+- `outputs/START-HERE-ONBOARDING-GAME-PROMPT.md`
+
 ## Path B: local repo install
 
 ```bash
@@ -53,6 +59,8 @@ It validates:
 - wiki compile
 - question-to-output loop
 - weekly digest generation
+
+For exact no-guessing sequence, use: `operator-pack/PERFECT-PILOT-RUNBOOK.md`
 
 ## Hidden operator commands (behind the scenes)
 

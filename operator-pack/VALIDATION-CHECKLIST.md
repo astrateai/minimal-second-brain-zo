@@ -7,6 +7,9 @@ A client setup is valid only if all checks pass.
 - [ ] Vault has visible core: `raw/`, `wiki/`, `outputs/`, `WIKI_SCHEMA.md`
 - [ ] End-user instructions only reference `raw/` inputs
 - [ ] No coding required for end user
+- [ ] `outputs/START-HERE-WIKI-RULE-PROMPT.md` exists
+- [ ] `outputs/START-HERE-NEXT-MESSAGE.md` exists
+- [ ] `outputs/START-HERE-ONBOARDING-GAME-PROMPT.md` exists
 
 ## Hidden operator layer
 
