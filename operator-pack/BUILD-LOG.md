@@ -58,3 +58,8 @@
 - Updated validation checklist to require generated START-HERE prompt files in outputs.
 - Added one-shot handoff template `operator-pack/ONE-SHOT-INSTALL-ONBOARD-PROMPT.md` for client Zo to install + onboard in a single prompt.
 - Installer now generates client-specific `outputs/START-HERE-ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`.
+- Simplified rollout to a single onboarding artifact:
+  - installer now creates only `outputs/START-ONBOARDING.md`
+  - installer now deletes old `START-HERE-*` onboarding artifacts during reinstall
+  - retired redundant operator docs (`COPY-PASTE-SETUP.md`, `PERFECT-PILOT-RUNBOOK.md`, `ONE-SHOT-INSTALL-ONBOARD-PROMPT.md`)
+  - added `operator-pack/INSTALL-AND-START.md` as the single install/start reference

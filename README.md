@@ -25,12 +25,8 @@ Everything else is handled by AI/operator automation.
   - `WIKI_SCHEMA.md`
   - hidden `.ops/` automation layer
 - `operator-pack/`
-  - copy/paste setup
-  - perfect pilot runbook
-  - one-shot install+onboard prompt template
+  - install + start guide
   - onboarding game script
-  - weekly digest setup
-  - validation checklist
   - bootstrap + installer scripts
 
 ## Fastest install (agent-friendly)
@@ -52,7 +48,7 @@ This does all of the following:
 - downloads/updates repo
 - creates `<client-slug>-wiki` vault
 - installs hidden `.ops` automation
-- prints the exact next onboarding message to send the client
+- writes `outputs/START-ONBOARDING.md` in the new vault
 
 ## Local repo install
 
@@ -74,7 +70,9 @@ cd /home/workspace/Wiki/<client-slug>-wiki
 
 ## Pilot flow (wife/brother)
 
-Use `operator-pack/PERFECT-PILOT-RUNBOOK.md` for exact copy/paste sequence.
+1. Run installer.
+2. Paste the generated file into client Zo chat:
+   - `/home/workspace/Wiki/<client-slug>-wiki/outputs/START-ONBOARDING.md`
 
 ## Notes
 
