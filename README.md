@@ -67,7 +67,8 @@ cd /home/workspace/Wiki/<client-slug>-wiki
 1. Run installer.
 2. Send the printed "NEXT_MESSAGE_TO_CLIENT".
 3. Run onboarding game from `operator-pack/ONBOARDING-GAME-SCRIPT.md`.
-4. Confirm success using `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
+4. Use `operator-pack/CLIENT-FAQ.md` for noob-first explanation.
+5. Confirm success using `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
 
 ## Notes
 

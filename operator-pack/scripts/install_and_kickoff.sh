@@ -16,9 +16,20 @@ VAULT="${TARGET_ROOT}/${CLIENT}-wiki"
 "${SCRIPT_DIR}/bootstrap_second_brain.sh" "$CLIENT" "$TARGET_ROOT"
 
 cat > "${VAULT}/outputs/START-HERE-NEXT-MESSAGE.md" <<MSG
-Level 1/4: Drop one note or file into your raw folder now:
+Welcome to your 2nd Brain.
+Purpose: you dump information once, and Zo organizes it so you can ask better questions later.
+
+Your only job: send source material into raw.
+
+Raw folder:
 ${VAULT}/raw
-Reply 'done' when it's there.
+
+Fast ways to do that:
+1) Upload a file to that folder.
+2) Paste text directly in chat and say: "Save this to my raw folder."
+3) Text Zo and say: "Save this note to my raw folder."
+
+When you've added your first item, reply: done
 MSG
 
 cat <<OUT
@@ -27,9 +38,20 @@ INSTALL_STATUS: SUCCESS
 VAULT_PATH: ${VAULT}
 
 NEXT_MESSAGE_TO_CLIENT:
-Level 1/4: Drop one note or file into your raw folder now:
+Welcome to your 2nd Brain.
+Purpose: you dump information once, and Zo organizes it so you can ask better questions later.
+
+Your only job: send source material into raw.
+
+Raw folder:
 ${VAULT}/raw
-Reply 'done' when it's there.
+
+Fast ways to do that:
+1) Upload a file to that folder.
+2) Paste text directly in chat and say: "Save this to my raw folder."
+3) Text Zo and say: "Save this note to my raw folder."
+
+When you've added your first item, reply: done
 
 FOLLOW_UP_FOR_AI_AGENT:
 After the client replies 'done', run the onboarding game prompt from:

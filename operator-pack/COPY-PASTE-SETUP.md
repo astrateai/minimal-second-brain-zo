@@ -24,6 +24,11 @@ Tell the client only this:
 Drop your notes/files into /home/workspace/Wiki/<client-slug>-wiki/raw.
 ```
 
+
+## 3.5) Explain value before instructions (recommended)
+
+Use: `operator-pack/CLIENT-FAQ.md`
+
 ## Run onboarding game (recommended first session)
 
 Use: `operator-pack/ONBOARDING-GAME-SCRIPT.md`

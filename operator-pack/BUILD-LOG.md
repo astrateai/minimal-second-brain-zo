@@ -38,3 +38,6 @@
 - Added one-step installer scripts: `install_and_kickoff.sh` (local) and `remote_install.sh` (curl/bash remote).
 - Installer now writes startup message file and prints exact `NEXT_MESSAGE_TO_CLIENT` text for immediate onboarding.
 - Updated README and setup docs to center on one-line remote install flow.
+- Updated kickoff message to include purpose + 3 simple capture options (folder upload, paste in chat, text Zo).
+- Updated onboarding game script with phone-access fallback behavior and value-first orientation.
+- Added client-facing noob FAQ: `operator-pack/CLIENT-FAQ.md`.
