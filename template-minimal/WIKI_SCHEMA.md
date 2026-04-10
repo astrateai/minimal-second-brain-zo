@@ -20,6 +20,23 @@ Hidden operator automation may exist in `.ops/`, but end-user workflow does not 
 6. Avoid plugin/tool lock-in. Markdown first.
 7. End users should only be told to add material to `raw/`.
 
+## Chat Capture Trigger Contract
+
+Use this deterministic policy for what gets saved into the wiki pipeline:
+
+1. If a message starts with `wiki:` -> capture that message (and attachments) into `raw/`.
+2. If a message includes `wiki this` -> capture the current thread item into `raw/`.
+3. If a message includes `no wiki` -> do not capture this message.
+4. If a file or link is shared in chat -> capture to `raw/` by default.
+5. If content is dropped into `raw/` directly -> process normally in compile.
+6. Regular chat without these triggers should not be auto-captured unless the content is clearly durable.
+
+Priority order for conflicts:
+
+1. `no wiki` wins over everything.
+2. Explicit wiki commands (`wiki:`, `wiki this`) win over normal chat behavior.
+3. File/link uploads still auto-capture unless `no wiki` is present.
+
 ## File Naming
 
 - Raw files: timestamp + short slug.

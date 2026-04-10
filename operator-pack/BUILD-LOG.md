@@ -41,3 +41,12 @@
 - Updated kickoff message to include purpose + 3 simple capture options (folder upload, paste in chat, text Zo).
 - Updated onboarding game script with phone-access fallback behavior and value-first orientation.
 - Added client-facing noob FAQ: `operator-pack/CLIENT-FAQ.md`.
+- Added deterministic wiki capture trigger contract in `template-minimal/WIKI_SCHEMA.md`:
+  - `wiki:` force capture
+  - `wiki this` force capture current item
+  - `no wiki` force skip
+  - file/link auto-capture
+  - plain chat no auto-capture
+- Added canonical policy doc: `operator-pack/WIKI-CAPTURE-POLICY.md`.
+- Updated onboarding, installer output, README, template README, FAQ, and setup docs to teach and enforce the same fixed trigger contract.
+- Re-ran installer smoke test for `wife` vault and verified `NEXT_MESSAGE_TO_CLIENT` now includes trigger rules.

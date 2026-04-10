@@ -24,6 +24,21 @@ Tell the client only this:
 Drop your notes/files into /home/workspace/Wiki/<client-slug>-wiki/raw.
 ```
 
+Then teach this exact trigger model:
+
+```text
+What gets saved to wiki:
+- Files or links you share in chat
+- Messages that start with "wiki:"
+- Messages that include "wiki this"
+
+What does NOT get saved:
+- Messages that include "no wiki"
+- Regular chat with no file/link and no wiki command
+```
+
+Canonical reference: `operator-pack/WIKI-CAPTURE-POLICY.md`
+
 
 ## 3.5) Explain value before instructions (recommended)
 

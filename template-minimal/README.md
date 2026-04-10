@@ -6,6 +6,16 @@ This template is intentionally simple for end users.
 
 Only add source files to `raw/`.
 
+## Chat shortcut rule (optional)
+
+If using chat directly, keep capture predictable:
+
+- `wiki:` at the start of a message -> capture it
+- `wiki this` -> capture current thread item
+- `no wiki` -> skip capture
+- file/link shared -> capture by default
+- plain chat without trigger -> not auto-captured
+
 ## AI/Operator responsibilities
 
 - organize knowledge pages in `wiki/`

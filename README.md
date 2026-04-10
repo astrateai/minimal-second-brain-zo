@@ -8,6 +8,14 @@ Only one instruction:
 
 - Put files in `raw/`
 
+Optional chat shortcuts for capture:
+
+- `wiki:` at message start -> force capture
+- `wiki this` -> force capture current item
+- `no wiki` -> force skip
+- file/link shared -> auto-capture
+- plain chat with no trigger -> no auto-capture
+
 Everything else is handled by AI/operator automation.
 
 ## What this repo includes

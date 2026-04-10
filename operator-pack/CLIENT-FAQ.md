@@ -24,3 +24,18 @@ No. Easiest options:
 ## What happens after I send stuff?
 
 Zo compiles it into your wiki, answers questions from it, and sends weekly digests to keep it active.
+
+## What gets wiki'd automatically?
+
+These are the only command triggers:
+
+1. `wiki:` at the start of a message = save that message to wiki pipeline.
+2. `wiki this` in a message = save the current item/thread to wiki pipeline.
+3. `no wiki` in a message = do not save that message.
+
+Also automatic by default:
+
+1. File or link shared in chat = saved to wiki pipeline.
+2. Anything dropped in `raw/` = saved to wiki pipeline.
+
+Regular chat with no file/link and no wiki command is not auto-saved.

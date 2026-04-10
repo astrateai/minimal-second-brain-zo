@@ -29,6 +29,15 @@ Fast ways to do that:
 2) Paste text directly in chat and say: "Save this to my raw folder."
 3) Text Zo and say: "Save this note to my raw folder."
 
+What gets saved to your wiki automatically:
+- Any file or link you share in chat
+- Any message that starts with: wiki:
+- Any message that includes: wiki this
+
+What does not get saved:
+- Any message that includes: no wiki
+- Regular chat with no file/link and no wiki command
+
 When you've added your first item, reply: done
 MSG
 
@@ -51,10 +60,24 @@ Fast ways to do that:
 2) Paste text directly in chat and say: "Save this to my raw folder."
 3) Text Zo and say: "Save this note to my raw folder."
 
+What gets saved to your wiki automatically:
+- Any file or link you share in chat
+- Any message that starts with: wiki:
+- Any message that includes: wiki this
+
+What does not get saved:
+- Any message that includes: no wiki
+- Regular chat with no file/link and no wiki command
+
 When you've added your first item, reply: done
 
 FOLLOW_UP_FOR_AI_AGENT:
 After the client replies 'done', run the onboarding game prompt from:
 ${REPO_ROOT}/operator-pack/ONBOARDING-GAME-SCRIPT.md
 Replace <client-slug> with ${CLIENT}.
+Before onboarding levels, enforce trigger policy:
+- Capture when message starts with 'wiki:' or includes 'wiki this'
+- Skip when message includes 'no wiki'
+- Auto-capture files/links
+- Do not auto-capture regular chat without these triggers
 OUT
