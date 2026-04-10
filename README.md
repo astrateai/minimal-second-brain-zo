@@ -21,20 +21,35 @@ Everything else is handled by AI/operator automation.
   - onboarding game script
   - weekly digest setup
   - validation checklist
-  - bootstrap script
+  - bootstrap + installer scripts
 
-## 60-second install
+## Fastest install (agent-friendly)
 
-From repo root:
+From any terminal:
 
 ```bash
-./operator-pack/scripts/bootstrap_second_brain.sh <client-slug> /home/workspace/Wiki
+bash <(curl -fsSL https://raw.githubusercontent.com/astrateai/minimal-second-brain-zo/main/operator-pack/scripts/remote_install.sh) <client-slug> /home/workspace/Wiki
 ```
 
 Example:
 
 ```bash
-./operator-pack/scripts/bootstrap_second_brain.sh brother /home/workspace/Wiki
+bash <(curl -fsSL https://raw.githubusercontent.com/astrateai/minimal-second-brain-zo/main/operator-pack/scripts/remote_install.sh) wife /home/workspace/Wiki
+```
+
+This does all of the following:
+
+- downloads/updates repo
+- creates `<client-slug>-wiki` vault
+- installs hidden `.ops` automation
+- prints the exact next onboarding message to send the client
+
+## Local repo install
+
+From repo root:
+
+```bash
+./operator-pack/scripts/install_and_kickoff.sh <client-slug> /home/workspace/Wiki
 ```
 
 ## Operator commands (hidden from end user)
@@ -49,11 +64,10 @@ cd /home/workspace/Wiki/<client-slug>-wiki
 
 ## Pilot flow (wife/brother)
 
-1. Bootstrap vault with script.
-2. Give client one instruction: "drop files in raw/."
+1. Run installer.
+2. Send the printed "NEXT_MESSAGE_TO_CLIENT".
 3. Run onboarding game from `operator-pack/ONBOARDING-GAME-SCRIPT.md`.
 4. Confirm success using `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
-5. (Optional) run sample fixture via `operator-pack/scripts/load_sample_fixture.sh`.
 
 ## Notes
 

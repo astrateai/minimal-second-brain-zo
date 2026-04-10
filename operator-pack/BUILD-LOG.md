@@ -35,3 +35,6 @@
 - Added pilot scorecard: `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
 - Added sample fixture and loader script: `sample-fixture/` + `operator-pack/scripts/load_sample_fixture.sh`.
 - Ran GitHub-style smoke test from repo root using relative scripts; compile, health-check, and weekly-digest succeeded.
+- Added one-step installer scripts: `install_and_kickoff.sh` (local) and `remote_install.sh` (curl/bash remote).
+- Installer now writes startup message file and prints exact `NEXT_MESSAGE_TO_CLIENT` text for immediate onboarding.
+- Updated README and setup docs to center on one-line remote install flow.
