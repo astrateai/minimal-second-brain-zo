@@ -1,0 +1,37 @@
+# BUILD-LOG.md
+
+## 2026-04-10 UTC
+
+- Created project workspace:
+  - `template-minimal/`
+  - `operator-pack/`
+- Created minimal template contract:
+  - `template-minimal/raw/`
+  - `template-minimal/wiki/`
+  - `template-minimal/outputs/`
+  - `template-minimal/WIKI_SCHEMA.md`
+  - `template-minimal/README.md`
+- Created operator docs:
+  - `operator-pack/COPY-PASTE-SETUP.md`
+  - `operator-pack/VALIDATION-CHECKLIST.md`
+- Created bootstrap utility:
+  - `operator-pack/scripts/bootstrap_second_brain.sh`
+- Next step: run end-to-end dry run on a fresh test vault and record results.
+- Executed dry run using `bootstrap_second_brain.sh` to create `/home/workspace/Wiki/alex-simple-test-wiki`.
+- Added 3 sample raw sources, compiled wiki pages, generated one output brief, and generated one health check.
+- Recorded validation results in `operator-pack/DRY-RUN-RESULT.md`.
+- Added hidden operator automation layer to template: `.ops/bin/{compile,health-check,backup}` and `.ops/scripts/*`.
+- Updated bootstrap script to auto-copy hidden `.ops/` into each new client vault.
+- Updated copy/paste setup and validation docs to keep end-user workflow raw-only while documenting operator-only commands.
+- Validated hidden ops in live vault `/home/workspace/Wiki/alex-v2-wiki` with successful compile, health check, and backup runs.
+- Added onboarding game script with exact client-facing AI verbiage and pass/fail validation at each level.
+- Added weekly digest operator automation guide.
+- Added hidden weekly digest command to template `.ops` layer.
+- Updated copy/paste setup + validation checklist to make onboarding game and weekly nudges part of standard rollout.
+- Fixed bootstrap output messaging to include `weekly-digest` command in the printed operator command list.
+- Updated dry run report to include weekly digest validation artifact.
+- Made bootstrap script portable for GitHub usage by resolving template path relative to script location.
+- Added top-level GitHub files: `README.md`, `LICENSE` (MIT), `.gitignore`.
+- Added pilot scorecard: `operator-pack/PILOT-SUCCESS-SCORECARD.md`.
+- Added sample fixture and loader script: `sample-fixture/` + `operator-pack/scripts/load_sample_fixture.sh`.
+- Ran GitHub-style smoke test from repo root using relative scripts; compile, health-check, and weekly-digest succeeded.
